@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Parque Natural de las Sierras Subbéticas</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"> Parque Natural de las Sierras Subbéticas</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">¿Qué visitar?</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Acerca de nosotros</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Sugerencias</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Otros">Otros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img id="localizacion" src="https://static1.diariosur.es/www/multimedia/202111/24/media/cortadas/Mapa%20Subb-k3sE-U16051580895IMG-624x385@Diario%20Sur.jpg" height="500" width="750" alt="..." />
+                <!-- Masthead Heading-->
+                <br>
+                <h1 class="masthead-heading text-uppercase mb-0">¿Dónde estamos?</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0" id="intro-descipcion">Naturaleza, cultura, historia, tradición...</p>
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">¿Qué visitar?</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="data:image/jpeg;base64,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" heigth="500" width="500" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://www.destinosubbetica.es/wp-content/uploads/2018/08/Pico-de-la-Ti%C3%B1osa.jpg" heigth="500" width="500" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://www.caminosdepasion.com/wp-content/uploads/Fuente-del-Rey-de-Priego-C%C3%B3rdoba.jpg" heigth="500" width="500" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2020/12/01/16068130447994.jpg" heigth="500" width="500"  alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://3.bp.blogspot.com/-_nGcNoZFGYQ/Wv0c9PYsa-I/AAAAAAAAX3s/8ScTTyg3R80WzgHkkbK0i8poU7zvc3rpgCLcBGAs/s1600/9%2BMuseo%2BArqueologico%2Bde%2BCabra%2B13-5-18%2B%252813%2529.JPG" heigth="300" width="500"  alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFBgUFRUYGBgaHBsbHBsbGh0bGhsZGyEaGx8hGx0bIy0kHR0qIRodJTclKi4xNDQ0GiM6PzozPi0zNDEBCwsLEA8QHxISHzwqJCozMzMzPDE1NTMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzM//AABEIALcBEwMBIgACEQEDEQH/xAAaAAACAwEBAAAAAAAAAAAAAAADBAACBQEG/8QAQBAAAgEDAgQDBgQFAgUDBQAAAQIRAAMhEjEEQVFhInGBBRMykaGxwdHh8BQjQlJikvEGM0OConLS4lNjk7LC/8QAGQEAAwEBAQAAAAAAAAAAAAAAAQIDAAQF/8QAKBEAAgIBBAIBBAIDAAAAAAAAAAECESEDEjFBUWETBCJxoRSBMpGx/9oADAMBAAIRAxEAPwD0wyMXF8lk/U/lTHBcC5Ms5QbwSc+lKFyRoHhBwzagS34KOw+dGfgTCi3cRY/uhiSfWmcurBGN5odYWrU+8YHpiG9Mkn5VW+5aCinSBGRGrzzQuG9kBfG1wO/UwPkTMDyqcRx5ErrB6AZn1NI2rxkpVLOCqra0FvCpAkggGI69qSTjySCFV2PlA9AcDtihjh2ufERpmYIjP1+por3AoGkGQNsBfVVgVRNLHJJpv0RrVxVa47oOisRBPQAfSKzX4u4+J+QxNMHi77eEsAvIQB9hWpwCXVzInrn78qpv2q2k2Js3OlaRjJwtxsFiPOYmqXLa23GozEEivR8XxY0lR4388KeuozA7CsxOHYmSZY8o/PehHWb5wjS0EuMsrZ9seLYqJwQcgfnWi/Ej4g++ZBx60jxFtcKyrPUCT9PxoL8KRyiekfWKEtsuMGW5YZsKpI1lDsDqAIwdthmluJupr1KWk748JHrBFA4FCMFys8hMfemL1tP7vl1pLUWFJtGc9q4TM6h15/LcmrcNqVzE9539elaFvRHP5gUHjHlhqBxEON/nz9Zp/lcsMD00socsmcN9Qah4EqdSNH2oRuYwxPrVE4grgCp2+h/t7G0uEA6pGxPMfTarI9tz8Sn6T5xQUvz8W/ahsg3H5UUwMYawhOPCeUTE+XSgXuFbcnUaiPG80UcQadakl2I4RYtc4cwPlEferQ6CNWB0o5uVz3lOtR9ibF0McHxFzY5H+Sj6GKO9xgsaRP8Alt6fsUlq7xVtZ5sT6UrabsZXVFbl24BlTHWJ+vShrcZjGTR0vx1HlRA85x8h+Iqq1K6J/H7GrXFlhpf65qLw3MZHkMUoT1AI+X2NQXI2DDyb86n+B78obtW1mQSpB5bfXamnfrHn+vWsvWDz+Y/KrayN4jzIovPYLroctpG/3qzsNjSvv42k/UVcXQeeelNfYvot7oda7QvfH/L5Gu0d0gVEyX4YgSGBHaR+FLNbYUqbRU4VZ2yx+wMVx+KuDdVPPaPnmuFJ9M7G14Dsp5/aqMnar2OILbqCego3vQNwPn+tbc0bZeQKyNhQmVp5D60yXU7L9/zqogmBv03objbGC5zPzM/Sis40wYJ5GSMehiPMVGBHIj0j8KC92Of0oqVm2tB1uCOXpn71EIGwP2pT+NIOBPpV3vSJwJ5DNFpmTsZx0A+X51xmB6fWg8PbLsF1ATnaYAzWk/CoPCGDcjjnz9IpboKjYmoHWuO4H93yFDeAY1EV0OGG8+ePvTWaie+Hc+oH51Eu5gbec/hVDaA3P2/ChlgKaxKYybvaurcB5D6/nSwcVM71jUMtc7D6/nXUvRSuvNHSDtWsyQZ75P8AtVQ/OKoNPWhOTFZNGcRtL0/sVZmPn++dIIYo6Xe8UzEoOjxzI9aJ7zvSnvj50VGVtxHcVrNQyHNXS4B1/fpS112TZpHlUW9Pf0opgodJn9DVWBH+1Lo3pRNR61rDRdXqy3O1BL1dmUbL6k/lTWLQwrRyjyppHJUnMjyz9KRF6djp7QPvvXS57+lBsOA3vT3qUr/EfuIqU2fAmDJfhXPw58qVu+zLjGSj+cGtbVIyi/Lz/P6V21fAJOnfkYOMnn51xLUkuDvelF8maiaBBkfSuMdQjTJ8/wAq1n4tB/Tt0xn0pPiPaQ2CZ7kn5ZoKcm+DShFLkVViAQZHLGOk1OHdlMgD6nypd+Lc4Ax5TUS5G+T6dpx6VSmkTvwbKcYTuR6wf3/tQLqFtgPMdvLyodu/zP75cqaN2RtGPxnlUm6ZfbayJPY8h6GghGOAP3+/vWpav6cEH0nH7imbiK6yrZ6EZmstRoX4zKt8IZlmM9Bg0e9wpABDHOMHn3k0ccIeZcneOnnJq2tRgqw82AoPUYKisMRfhG06mbHzPrnHnShtmZP2x6GtR76RlZ/7jQ04q3EC0PUk0FrehXt8me5nsaoFJ5n51p8SyukBFWDgg/sH1pD3Lf3D7VSOqn6FdBEEb0Q8RHMH0/ShJwdw7Ef6h+dDv8G675n+0z84p90Xiw7WldFmuiaqr0MWiM5own1o2hNrOi9Vjdmue7PT6VFTP1nlW3I21lRerjPVnInlnt+NCY9/lTqQrRdXbpVxcbuPp96EATyJqwQ/2tTWhdrHuHuOcEyO5mq8TYKmQRHntSyXypwselHucUWB8j2mhlPA1JrJe1ejcimUuTWZJq6XMU1JiqVGsr/s1YZEHHfoazbXFRvmnbTg7GKR2h1UihYqYOCOVG98eTafqK5ess45ah8J2kf2k/b5Uh70qYYEEciM06yTaaZp+7/+6n+k1Kz/AH4qVqkbAdvY7Ha5I5QD+dK3eBdSRrUxjIb5HBqLtPpM8vnVbl1t5LHpM159y8na6fCBtbuAbCOoI8+e3735c1LIBAnsRyrnvicMTOMYIPKCDtQoQn/lr6FgM/8Ad9qtBpr7v0Sal0NpZE/EqiMy0enc+VL8QtvJLBjyInHbeI+dUsqoPwsQZMBsCP8AEyGPrXOKtW0RbiM2TBhdt9wWztuPlTw2bqbYJOSXB21xCLsSOewPzk/hRR7SA/2H5xWZfdYJVhg5iY9Mbfb5Us1+uuOhCSvJzy15xdG4/tJP7J+Q5zyFVT2pHwhV596wjfqC71pv42muib15vs3n9osRBMzQxxA25+U4rF97UF49RWejBmWpJG17/kwBBP08qG7jksAxn5nH7+1Za8URtRE4zrUpfTodar7Hk4hhgic79scv3zo6OHBKgmNwOXnG1IfxYHKgXL4Odj1HhMdiMioP6Vsd6kWsm5Zcc0jz1fnTPDsD/Sv+nV/+xrz9viTtJ6An/wCOPpzo68Y4Iz3B3+0VKX08k8Dxmj0BZFPiX/wUfKKKvtBEHhtg+o/9tYQ9ou58TA9OX0g0QXVPxavQA47EkfKpy0Z2P8r6Y/xXtC5c28I2gHB89qUbXGUPnMj5imOGS0c6mnbSfCf19KOtlNQmY6Zn5k0YxnEXe+2ZLAn+kT5/rUNp/wC37VuNw1rlqHr+YpVrMTnHLr6wKdvU6QrkZJuMN5Hz/CujiDjNayQJz6RP3FA4gW8goCf/AER9RiqwUn/lgWzPN88z+NWS9+9qh4W03wuynPWP/IVxeEgSCG78vpTtJGVsKLo5ii2grYAJnpn1pGSOkdoP1zVg5rV4MOHhTUW2wpVbxHOmRxf7NG5BpB04pxuJo68Rq3E9j+dKLxg8vU0e3xR7H5Gs78DJrhsBc4tJP8of6v0rlN/xA5qvyFSm3ev2Jt9/oykYEwokyOXXI3nvPTNHW2AMk7EcxnH050ja4mCAoEZ3BE/4kHZs8+lOpxDERAkkjxEg4zz27VxNM7IlgFUjAIBwCwE/08wef371y+FIIVFWDuPiwMnGAfSi+8/yE8ok7ZgnaennmowEyF8xG4wZB7eVLbGwAW0TGwxIk45jb9/ere5gFY1KT8LbajnHXJ+1FtxBwciM5jpjkcn51x1B3kbTzJGI5YHL1rWwbUzJucJBKLzHw47TpM52G/zpJ7cYNb77QZIBEZwPLpvQ3QOp1D1mG6RnByAcx61eH1MlzkhPQi+Dzx59uZoGsc2FOcRZNvJEqSQG5GCQftWbxG8gDz612w1dxyS06GNXQ/hU1+tI5HP5VZDFFyAkMvcPKupc60uHrhuUN5to4z1YUkH86i3K25hpDwuDsTVxeOPlWc3EZ5VPf0QbkaPvTRrXGsP6qyze71BdpllZJyecG8ntExmD6UQe0D0HpXnxcoiXzQenEKkzdTjj5etEHGE7n61iLfPWrLerbF4Nu9mw3E/5H51ZL3eaylvUdL5ptqQU32anvKuhFZwuYn9mureNDZYznRp+7Q7qD3iD86C/CD+liPPP3k0sb5POr2r0c63x+QfIX/hSOh+f6108PVxfPY0Q7TBj7Uk9NdDRm+xV7BG4qnuyDTbtIgnbY8j2I2G+4/3p7vkVI7yI/wBqhbi6ZWk1aBa26/apTH8OP/qW/wDUfyrlNuNtFwhA55HWJjYzz8/mTVRcxgb7/sHvTrIDPWRtgcuvelHXJEkmBuOnn8+fyrzlJnc1R1boI6n1655n9xXVuyRCyJ3Inp9KVuPk55Z2G/r+8VUsQD5fbPX9zVEydGl79Zyo9d4GMEZ/WhvxMTEjruP1HPbrSZJJJwY5jEmT89/pVHwNOohiQIIx32O5PataNQ+nETuRy2PL/u/eKKHBIg5U4PcfrBmsZwP7gMhR0nB2jaR/5U+lg5dHEr4vEID4nAgziKDoyTZ3joe3eAzCi4AdgzEg6TvyJHUlpry5ujTgT58vOt72fxXvbd1rohbjkSMArAAAAjEz9awOORQCQI8RBT/ESoIjG4+o61XRmk2vZKatJi5u/PtQxcpbV4pkeU/rUe9FdRD8jaPXDc/Sl1aczXNeaFgDI55n9+tc95Gx+dC95O9VZxTKQGg5c9aguUIN8+9TVBNFSJOAdXqwelgfWiop6U26gKLYxqqyvS4SuyaKmjOLQ0tyiq9Iq9EV6dMA8r0VblIK9FV6awZHlu0VbtIK9EFymRh9LuaMHrOS5R0efOdqWWBkrNO2wxEzRRe/Kkre2onH75T2pm0BEiGjvpOOUHnHeueWrFcnRHTZLjmcGD9I70PinKsY7RPl50VrywMFecHqOvLTz3pS+0mfnv8AnUN6lK0M40uS/wDGvUoOn9ya7VcAyPB7jZMHERIwPtnr+dAe4REzntI9CeY79ulS9cfqZMRyOw5HBp32Xweo+KFB/qOBJ5YB+VeY3R6CVgbfDvEgkScyIEdycf7VTiRiMcsyYU+YUwOVeh4gW0t8pBGcxM8+0d9hWLxjqQCANInKyPkQATWWRvwJ6hsAu392+OROKo95sCB0nwnGN48/pVferMEzzgmWjbEn9zXGSCZ8UwACfrIO2du1NwJVknVyUCTk6lHLbbeREd6sIKsFHh5s2oakIb4C3OYAjftIjN4++ypq04BBInJBmYmc5ET/AG0/7Qtl1R18KkDUDAhDBgRBnYenaKWdql5F9CF99TJbQFbdsKZXmZjnHhG5JwYPM1l+1+KLu8fCPCsbGJgx6k+ZrS9oXVt29AmIUkiJAbK+rESewXlWCzgscbE95jf1ro0lSsjPwK2YxAydxnlzqzuIP40leuSdz3risGiZ8v3tXXXZz30NoDEzRA3ek0c55cu0UcP9v3NJIKoI1z9/71wMTihk9xUDkkR9a1maGVbHepr60GfnVS0D9mggMbUxyq4uUkLk7V0t2xTUCx0XPyrvvB1pLUKgamURXIaD1dXpZauNqpZLaxpXoitSgfrV1ems20bVqsHoCGiL1oqYdgyj7CmAc45R9s/jSyHpv8zTNq03w6SDuZwT6bn0pXqFFAf4R5XIwOn5bUY5GGnAIxBjnPI5E9vlQuG4fSAckHfqD0IO/SipsSoJWJO8gHDCDnafUVxarTVo6Ixe3IAKT5HYjpnbqO+K4yZmR1Mzzx5b/nyqjpEjcqdOeYXOCNxH4VGeDueQEz6ZEx++tNB2sAoKrNzE/L865XPet0J9R/8A1n51KbczUP2uFmRoPIgkxHqTgdu9M3eHuQEMKI8WQcddz1+1dDvpguQQSZVnMzkFd1jsYoi3LhyHYjeFAmRGoFPDjvIrzbZ6Sod9l8AhI1Kzd5A+m8ZO34023se1BKyu2A4I9Q0j0onsvi3JgMW/uxpA85YmY+dM8bagsUJWN+QBMbZ094MedZPAj/yo8v7T9nMrkKDOmYDAiPI7RNZvE2GACsGUA5PKMc/Mn50z7VN0N4y7QYWExnMjTqO34dKzuIRyqW0w7FAeuJYlwRlQd/zqkRZYBPwly4yMAGQEn3YMaviMkxtn5U3xJW4oVj4AxZxsSBnRByJIkkYgeVaAm2NCCXbwqD0ggkmMA6SOoxnM15n2lxSpxSo3iV7bKWEgJ7yQzSd/CIwedKrk0/HAlbVb7M7iA1y4txvidnYlR4SV+EJ5REchpFZBugGIJnnz61r8S+m2qvbZHR/5bDTDIGPiDAn/AB68s1hcbkk7AnEHmdxH512x8EJ4C3VkGOvzoD7ydo9aor6cZHnnNDRyCTqMnb9nFMrJuhwQRnl2oTvMaRAoL34gCZPMnn+VFS6MDE842rZWTYZxwQRJyfl61fh3iQWIPI8vyrjLPLbpVGBGI3o3aoG1pjAYZBMx9D2FS48c6ASvQ/PnQtZzRSAw5uVA9Lq1HQqetU4E22WDUVWzS5HrR7SgTJExP6VnJJGUMjSZORVpBwMmfSpwllnZdKs0HYbifoPWtJLJSVMs4zCnSobbJwTtkjFSepTKbLEShAlsdo5RP1o54ZgZ5TGMmDzgcvWtHhuBJGXC8oHwwcwQZnMbU2bQBOpSBiCNSgRkZj6kjM0j1mMtLBn2eCMZiT3zg7qdoxv39Syvs1wJkAYnmfntToPgDEEECSPECSRE7xO/qKYHFKRPxbiD4YMZkfjzqctdootONZEU9nrvhsxM7EdtqdtsyjSDKiMMcgTtMREcjS/8YOahRyUCCT3jl/lT3AW1uf1iemxE+e/Spz1ZNcWGMHf2g7vECdiZyDpnbGnHlueu1LfxQUkwG1HEySs5ia3F9n2hy1Hv1rN4z2ZyGBERhe42WfrSwkpYkyk9KdWxJL5OWE7RgxE9BtB39DV/dgwdt1yMzvhfWd/pQG4d9UkHmcgkdxtsaocDp/l1HL1Gx7V1xpKkc7jQ1/DN0qUt7wdSPT9alOKej9zJABxKiFVlJK7yyE9twBHLlROBt+JZfHjJHj9IYW/D/qBrjIwLEqmlWIJIUAkAA+IXPqRjmBtXW4VjBti3sAQc4MkjT7siJ5hory+Uelk1LIubgkqpWdLspO4ABcktPbT360h7b4y6xBJc8vCMCTGeoB89jyimzY0KNKnRGp2XSBtGyDVJ6hPUDfD9qXrQxbEABnHvBLHG5NwyM4iRt60IZfoz/Yvd49xGptUEnIJGnYY8KjPUHzzlX2jfKTdBGpWOllAB0AFiCuMdyDVB8SyAQdGqDbIiJg5JAEjn5UT2mhuWQRlSbhOAAQUYLBDkZJ61VJJiO3FmjctM5IysrKOomDI3PxA5iBuG+WXx3Ci6hd0DYgFfEzARmBBE6j15bTTnsv2imhUYZCgE/CdJM5BG0jnQuMcklrZM528LYJYjfS8mem43ikiqwxU4uOWef47gm92pVgV06gTh2GYyeXad6xktmCxDFefadvTz3r0v/EvEObKFAND5JXBBGdEADH359T45uIKyQBO2d47dNuVdWk3JHPNpMvc0kleYnft69KCicgVPbUPueVFs3bT4a22skAaTJbyEAT59u9RLltThHaCN4U4IJByZwInFV4wTwGHBsxH8vXvGmG23iDBpG1wrA7HMbDrtypn+KHhEMoUEAqZMkyZjTjJ2P6FXih/cwMzqJZekEquoGIPlq5xWto2BXh0YzGI+seXOui64cMQZ8t+v+9Ml1zoKmMwSoOnfwzlmHYZzHSrXlf4dJnccsbydoEZzGDQ3Z4GrAjxDuSWYfIYqnDNmtFeGugAm2ulhuz6RkE/1nf6Vbh/Z1w7WYzBIIbtjTM5pt6SF2W7M5hJnYVcW+YzO3KaMbeT23GeXaBmiKjGPCSOQjeOvbtR3g2o6oA2+W9N8HZW4G5QZxjAE5P5D1pezwbu+jSRAEyI8IxMDn3O9bNrg7ahUtNLtnJg8iZMYI2iOYHOkb9jqLYWxxn/TACwFYaB4gZBOZAMyYjufN5eFHh0BTMkscjp/dOfXIPac/wBmcEyXGcxJBC7yveDz6TTHA3feagJUAkk5BESSDO0nHTNc05VL7R0+jShEwWAEAaRETOe55fKqPxh2gYk5BJ3gSAZpK9cZo/qgQGkhGI3kkAz++9VQgQDsCBGxWMnMy4nl9qpHTxb5Gs0Vt27nhko+YEyrjmANQj1pLiEe2+lpVsAAwSenXTsMd96sjMB4cLAM5VTJ5QNUx9qds+0NQNu4WZJiRClRyBJMkRQ2qPVj7VL0zKuX/iUiGkSw2yN2Y7Zjly51ZXIyIwYwYVTOdjnOeWDR+K9mwCyFfdwYGrU0421DqAdJrPJIEwFGCFwoJGCI3AIPliqxprArUlyb3Ce2SANXiXbUTB9OuRGRO1a1jibdwYOehwRy2NeN9/JMxr1RvMA9gPtPpRC5XIOJidyT2zie1K9JPjA8dZrnJ6y/bHOD3IH0rOfhV5ZPcfgBmk7HtVhAbM7AmW5QZ7jrTtvikfYwd4OKCUojOUJCX8I/Rf8AQalavz+Vdp/kYnwxNEoslyjHURL21IQmNmKBiRI69BQuIu4QFVUzIW29kHVnGm4JyMxkyKHxNzUolGJjVD6QuqP6X0N4RuATQDxOpgo8OJ+PxKYHiuKrhTt/bPauGi+4pxHgBdUAJB3tiOYGrRbZCT5mlrpARi2kAjQMqojfC+8Qb7QOVbF7hrZKhbiGVksLR1aB4pMo+rIxEedY/EuROlncfECA6c4iEO0ZylPGxWxPh2llZdRGokQGaSo5abjHfvRrfEwroSGUgFpZyNGxJ1F+YAgHkaVuJCwA+0Q0iZ3+O3yziT6UJrpBUEMNG2ZUoecYAg5+HmO9PtsRSos3CjURbJVTBVCyXFWRy1AMo2iD186FLIB7t8/1LpMRAPhDkNG5xIqruGJ8aFVGIdSCJOnVKdtp+VM8I51ogaIgRIYmSNUgWzJmAOw3oyVrIm1N0H4fiZQrdQb+JcwecpMT+cedY/HewSzMqsoA8Q1b6YnYcxnzg1t8d7OKQWJhWZgwbTpDHVmRG5IzIIpmz/w61y2rDioPJrgXPaQMjfMg1COH9roEtFrFHibn/D1xV1wjCJwxEyJ2KzMSY7U57L4RFKsJJA30gqwMeIArMDaa9PxHsJmGeIQCQToVisiI5r0+tKvwVu34bl1dAGmQ4XS06pUAEq3Leq75SVMH8Z8tUC4+ylxZEBo+KFIPLxAjcZ+tKDhrfu0tsgIky2kMRtsQZXInpk46XXhUCsLd5zgyAXeQ8ciu568q5Y4J5j+bocAGWmIiDFweE4Bx0pIwkuxvjfgW4/8A4esv/wAm4Q3NWAIAAG0ZmfOs9/YDoQq3FJg4V9JWCAcE9Y26VvrwioCzXmGo+IF7ZCkYB+HHSBRf4UZi9ceAMCG1LymFzPzp1OaxZv47bPMv7JulNLMzKDtrkagOhODBrvs7g24e4Ha2+M6kM+ECCCqnIn02rd/g74ASWKRI1goAZnTIbn5HeqFruNT25GCNUsp5aCFPTYjl0xW3zysNAek0+C7JbdA7W11MPiiBzO7BQMRjff0E7vaZba2SVPiYgbkxEAHvzInltXP4e4JAtroBkldSgjMGCInYkjGO9X4e4QDBICjAUsF0jEgMdPLblFLlLKwZxa6GLbPA/l6STEavEcgiPLScZ6UpdcKSFAwuowYkkwwPSABKxVrXE3PCk6iASDzI6kjcefOaGgYElj4pMHSHdjAJOOfbMxNMpXhAbbwS5r0iGKg7EtsR99p8560Wymm2NByJLMSYeTIJjcjH0o1tVHxAL4viutqOG5AnfOG9K6ttmAKjURE3Lg0oNJIwsiII2PnRWORlp08FAzEeEzgTOEIP9giJwT6mhWGUnwgmD/zDHg9OYqPz8fvMjSAGAUzgqQPoPOu6JYayrMSYChSpHedjV1I1F2AOMO7KDn4RvsccxXHfMFtUFT4ZAXbBjkKsimArHSIPgAafQ55Ua3w5YaRhSBJ/qYAzB2oOXkooN8HOF4wqdIKgkkeEeHrmmdC3CGGr3nQvA6GJ5dqz79opyKISYnmBg5yMV226x4BgH4jGJ+UjFFxrKAneGV4vhnt+B41EjBuAZ5RABB5RQNe5VgSW6uzYzleeZzWvw/HiNL+OfDrVRqHqQRHn86BxHs1/itBnWZksJG48IGV32rKXkScO45EHdZOdJ2LbA9Rk/ehm5pOkDIkbzJ585UVx0IJABGTM6h5E75rb9j+yGb+Y/wAJ8URknfYds1W0lbIZbpCSWrpHP9+lSvaowAHhX0IqVD+TEt8DFhw5TUQsiIdWBAHIFW93LtmcGkuIbRJLDMlWcsG3/wCp/MXphY50uLxvpK3QGAlWa4NcnGmCoCqJ5dqVm7aWHtMxMjVbuW9JHRhBGx84Fc8Y+8nQ5+sDF3iGe2LbBULSxA93cU4YidZZusAdTWfbdbgl2AG5EC4BpkABTb+28nrTCcWqANbW2jsp0yoFyQZYFnAWc4gfhQuLvMWEi6GjOA6sG6qxAnfkNuVFCviwDW38B0AoCWJW2JAOMrpJUmOtBDACGkMDO1y2xwsE6BBPYemZrr8MNYgSMSDZuAgif7MeomuXL7ajq0ACCTN8EDI26SQOnfIqgjLLdYGXDwADAPEHoRyHOJ3ppuIYppVXUFswlwPJBMyWBaANu3pWXbtE6W0EjxESl9oIAzkyASBvy5natLhbaara3ggUsWOoQqkYg6jud8gYWhOkGFmhxEp7lA7AkQwW3rZjPNs6QOcmaX90xJn3sNIyUthQcDG89DvinOIstpQe8v3AcygTRjYNpAgY71n3uBEtNu0rapGu4zzk5gc4nFSTR0bWCvWUCQzWhoz/ADLjOQCQDIXnMUbhSZ0pcADeJfd2S2c5LPAJOd+ooB4pPEyOjQMrbtgtJgTJPWqsbhVPDfedW7hI2jVA27dqfNAxYxb1sFOm+5A0kM6W1ickgc+XpQ2REBTTYUgyguO9wwJ8RzjE1V+FIuMpNkK0HxsxZpzicHM47VLUa3ti5kY/l2yukSI8UR69zyre0D8hl4vI0MNLj/p2JyNyS3KZiq3+KaVzdYgxDXFtgg8yFI7R50J+HL2zqW47Bsa2Cat9yDsAPrVbnBOdLgW0IGSQXiNsnFZV2FqXRcXLYDKBbLLkTruvqXc5xIz6108S5RnT3hDYI8FuOrAkSJI+vOrMQpDtxAVSfhVVEkZ5T2/eaVb3OuFS44uDJMkR3k4o45BlY4Ovc0spe4miI8bu51cxkxOexoS3X95pYq4BBUkMqDp8JAOIx54otu28lPdWkUBtHPxcj2HWk+MRnlXuWy67QvLJIzO8jlyHWmjXAJRdGgXXUPEHeAdNtYAmDlviK/nV3sNAZmFgH+kaS/MAT12iOpxWbw3tNwCiuiHC+FfFiQZ95G3PpFM2jDAu2pWIlj4RpJBgMSWPaIPKaG1p0T3RKNxFtTqt253Ot5ODhiB0lc7ETtQ79+44HvCV8QgTvJ20gEE4MHnNbXCcBbMnXhmYgCVGgZJBcSTiCJ+VVv8As+xpkXI8MxkLHIHw6m+KQRsRTpIR7qMIsseB2HOck5BmOgmcT6zu5YJIi2Dp/qZozltvTnz55o44a0iM1xjJdtOpWUwNQwokyQAZO+BilHe2XYa4m5z1GLbRpKR/VJJIPRR/dTpWJe1l0fMIMSQbhGQT5dh967bvwRBLMZEhjpx9v1pmweGIX+YFUaWYSQCSYZSVWYGM9/kBLdvxKlw6Bn/IllYg+JZGQgj/ACJ5ZDXkpGfgdW8pt6XQbkxkkHnGnfYfKs+6GjUx8Bysb45GRO3lTfDjh0CQ+pwYJ0sJLfECQsYyIB+dRGtXAiu4FwB5UHUrHMZK48vWeQyTQZSTXsz/AOJ3CiCROAfFy/po3B8e1vVEwcE+JoJ5HVEkflV+JscLb1KtxgGfBE+FRq+GV2LEKczA1TBIrU9jewrRC3GYlSUYgySBDSBIAP8ATy5HlTuMayR3SukC9j+yDcPvLmFGdvl5nsa2+P4+3btnKjkF1RgcvzP6UTjuLtIo1NoXTgLJk4MCO/Pn5Vg8d7snxXd4IGmSZUHHg25elSzqP1/0fGmvYm/FXCSdY/8AyAfhUrM4pBqlQTIUmBjUQCwE9GkelSr7US3s1OLW3bUPdCEN8RCFWnf+g5kcyfSrXbDFVewupDGC51aSejeEDl1865Urjv7U/Z0eivE8cq/y3bQNitxNeVPIoYA5YHzpPh/dayP5eo7aRcQ+hGF3/SpUqu1KP9AbyXvKAZAXSSRHvLpJAjeRBO/zorcMy5W2T/l79xjYcpmNIntUqVJyeDeQd1lUnUqk4Yarl0gCSNUARgg9zQjxKKVH8oA6WWLbNuYJ8USTAGYqVKdKwNtM1eH9qOOIFsOSpWAoUDoMtM9TgUTheBZXdjaRJ/qksW33BJ86lSoTw8eEdmj93Pk43BXCpAuKoHNbekjrs2ZpLibdoKPeu9zR6HONwBie9SpWg7f9jfURWmsBjetOEu27GsyRkhRAjYE7+lducTeLDwIqAZEyQecRviM12pTtY/2Jp3L1+AV6+UfVcukKZ0oF5HG450ob1pXNrS7aoBlpB5jc1KlPBKv6J60nHgc4dnLNaFpQoJCsSIO42GRypP8AmupDXAuxBUHEb881KlBd/wBDS6BubZC6iXKCZyCYzmfL6UFL4uD3lq0pYEDxQPl0ialSm6FvNAPaHDaSLgUDaeZ1Z6nbamuDvyC0EkkhjPwzkCTJIwdu1cqVRZiic4pSwP2C5IKxkSYJEiIyzeKRJNOcLCnHwzLEYAnIImWIjlipUqcuGGPQ7fWxcDKofIeAp0qN4yfEcn08qwL6WTdDp8HiJ1LqBChAZUnJnUP/AEkcxUqUYSeRdSKpAX4i0QWVQpUWzqKyAZnbJJhY1c5gjE0exctvcZioFoC4QCoyGBCwF2ABBg5BGO0qVWXDOePIyyWEkBbkSASCO0xLH/IjzpW5xdpbfugXa54jJA+JgBGrGBBO1SpWhnkebpYNf2H7JsXNF1xOkLrx4SVQKx08/FnlOa3uI4lAk6TCgkRyMEbY3/CpUqGtJ/sppxVGHxF4NPu7cIJ05AgcoHKvNcQ0mTkGdyxMj9alSumCojqu6IiSJF0qOmmY9ZrlSpVCZ//Z" heigth="500" width="500"  alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Acerca de nosotros</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">Este proyecto está enfocado en hacer de un espacio rural, un poco olvidado por las grandes urbes, 
+                        como es la comarca de las Subbéticas un poco más llamativa para el gran público, así como generar un pequeño impulso al turismo rural comarcal</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Para ello, el geográfo Daniel Guerra Gutiérrez ha desarrollado un inventario con todos y 
+                        cada uno de los elementos de mayor importancia turística en la zona de influencia socioeconómica del Parque Natural de las Sierras Subbéticas, siguiendo la estructura OEA-CICATUR</p></div>
+                </div>
+                <!-- About Section Button-->
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="https://drive.google.com/file/d/1AZnAd4to-rnSFd1YSzk_IMY-xsmR5m3K/view?usp=sharin">
+                        <i class="fas fa-download me-2"></i>
+                        Descarga el inventario turístico
+                    </a>
+                </div>
+
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="https://drive.google.com/file/d/1AtNUTklM-wUC-wt1MPLYCL1hR0Y3nqTR/view?usp=sharin">
+                        <i class="fas fa-download me-2"></i>
+                        Descarga las fichas técnicas más importantes
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Sugerencias</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="http://www.iesjacaranda-brenes.org/lmsgi/resultado.php.">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Introduce tu nombre</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">Necesitamos un nombre</div>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">Introduce tu email</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">Necesitamos un email</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email no válido</div>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label for="phone">Número de contacto</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">Necesitamos un teléfono</div>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Escriba su sugerencia</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Necesitamos que nos redacte su sugerencia</div>
+                            </div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Sugerencia realizada, !!MUCHAS GRACIAS POR COLABORAR EN EL PROYECTO¡¡</div>
+                                    Le dejo un enlace con el que tendrá más información local sobre la zona
+                                    <br />
+                                    <a href="https://pnsierrassubbeticas.es/">https://pnsierrassubbeticas.es/</a>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error en el envío del mensaje</div></div>
+                            <!-- Submit Button-->
+                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+<!-- SECCION DE OTROS  -->
+
+        <section class="page-section" id="Otros">
+           
+
+            <div class="container">
+                <!-- Otros Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Información adicional</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Otros Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Otros Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="Otros-item mx-auto" data-bs-toggle="modal" data-bs-target="#OtrosModal1">
+                            <div class="Otros-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="Otros-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://i2.wp.com/alua.es/wp-content/uploads/2020/12/CENTRO-VISITANTES-SANTA-RITA-7.jpg?fit=768%2C512&ssl=1" heigth="500" width="500" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Otros Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="Otros-item mx-auto" data-bs-toggle="modal" data-bs-target="#OtrosModal2">
+                            <div class="Otros-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="Otros-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://www.lavozdelasubbetica.es/media/lavozdelasubbetica/images/2019/07/03/2019070311290571975.jpg" heigth="500" width="500" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Otros Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="Otros-item mx-auto" data-bs-toggle="modal" data-bs-target="#OtrosModal3">
+                            <div class="Otros-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="Otros-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="data:image/jpeg;base64,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" heigth="500" width="500" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Otros Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="Otros-item mx-auto" data-bs-toggle="modal" data-bs-target="#OtrosModal4">
+                            <div class="Otros-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="Otros-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://www.cordobabn.com/asset/thumbnail,992,558,center,center//media/cordobabn/images/2019/10/29/IMG_3448.jpg" heigth="500" width="500"  alt="..." />
+                        </div>
+                    </div>
+                    <!-- Otros Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class="Otros-item mx-auto" data-bs-toggle="modal" data-bs-target="#OtrosModal5">
+                            <div class="Otros-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="Otros-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://www.uncommunitymanager.es/wp-content/uploads/seo_google_youtube.jpg" heigth="300" width="500"  alt="..." />
+                        </div>
+                    </div>
+                    <!-- Otros Item 6-->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="Otros-item mx-auto" data-bs-toggle="modal" data-bs-target="#OtrosModal6">
+                            <div class="Otros-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="Otros-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://www.juntadeandalucia.es/export/drupaljda/gdr_Subbxtica_Cordobesa.JPG" heigth="500" width="500"  alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Localización</h4>
+                        <p class="lead mb-0">
+                            C. San Fernando, 4 
+                            <br />
+                            41004 Sevilla
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Contácte conmigo</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/AndaluciaJunta"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/AndaluciaJunta?s=20&t=SxCsUcy7f0KVNods4C5FOA"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/daniel-guerra-guti%C3%A9rrez-7b629b188/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/danguegut"><i class="fab fa-fw fa-dribbble"></i></a>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">Política de privacidad</h4>
+                        <p class="lead mb-0">
+                            <a href="https://pnsierrassubbeticas.es/politica-de-privacidad/">Acceda a la información</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; danguegut</small></div>
+        </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Cueva de los Murciélagos</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="data:image/jpeg;base64,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" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p>Monumento natural considerado Bien de interés cultural (BIC), inscrito en el BOE como monumento el 29/06/1985
+                                        También pertenece al Parque Natural Sierras Subbéticas (ZEC y ZEPA), además de situarse en zona Red Natura 2000 y al propio Geoparque.</p>
+                                    
+                                    <p class="mb-4">Este espacio que dividido en dos salas: Grande y Chica, las cuales albergan zonas arqueológicas de gran interés, 
+                                        como el "Vestíbulo" de la Cueva Grande, el "Pasillo de comunicación" de las dos entras, el "Corredor de las Pinturas" o diversas pinturas rupestras de la época Paleolítica.
+                                        Por otro lado, en su interior han aparecido restos óseos humanos que se ubican en el Museo Arqueológico de Córdoba.</p>
+                                    <button class="btn btn-primary" onclick="history.back()" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Vuelve atrás
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">La Tiñosa</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5"  src="https://www.destinosubbetica.es/wp-content/uploads/2018/08/Pico-de-la-Ti%C3%B1osa.jpg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p>Perteneciente al Parque Natural Sierras Subbéticas (ZEC y ZEPA), además de situarse en zona Red Natura 2000 y al propio Geoparque.</p>
+                                    <p class="mb-4">Esta cumbre es la más alta de toda la provincia de Córdoba con una altitud de 1570 metros sobre el nivel del mar. Es un espacio donde se visualizan rasgos paisajísticos muy distintos, como son el manantial de La Milana o la Torta periglaciar. 
+                                        La tiñosa también forma parte de la Ruta de los Ammonites del Geoparque de las Sierras Subbéticas.</p>
+                                    <button class="btn btn-primary" onclick="history.back()" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Vuelve atrás
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Fuente del rey</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="https://www.caminosdepasion.com/wp-content/uploads/Fuente-del-Rey-de-Priego-C%C3%B3rdoba.jpg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Fue inaugurada en los inicios del s.XIX, diseñada por los artistas Remigio del Mármol y José Alvaréz Cubero 
+                                        bajo un estilo Neoclásico, con varias pinceladas del barroco. Se destaca el uso del mármol como material y de la utilización del agua a modo de cascadas, estanque y manantial.</p>
+                                    <button class="btn btn-primary" onclick="history.back()" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Vuelve atrás
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Embalse de Iznájar</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2020/12/01/16068130447994.jpg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+
+                                    <p>Su orilla está bajo la protección de la ley de montes 43/2003, el resto no tiene protección vigente.</p>
+                                    <p class="mb-4">Es el pántano más grande de toda Andalucía, el cual fue construido para evitar las riadas que ocasionaba el río Genil a los municipios que colindaban con el mismo. 
+                                        Este enclave hidrológico abastece a un total de 200.000 personas de agua para uso doméstico y esta regulado por la Confederación Hidrográfica del Guadalquivir. 
+                                        Cabe añadir, que su instauración en 1969 ocasionó una modificación de la estructura natural, social y económica de la zona.</p>
+                                    <button class="btn btn-primary" onclick="history.back()" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Vuelve atrás
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Museo arqueológico de Cabra</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="https://3.bp.blogspot.com/-_nGcNoZFGYQ/Wv0c9PYsa-I/AAAAAAAAX3s/8ScTTyg3R80WzgHkkbK0i8poU7zvc3rpgCLcBGAs/s1600/9%2BMuseo%2BArqueologico%2Bde%2BCabra%2B13-5-18%2B%252813%2529.JPG" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Es el museo local más antiguo de la provincia de Córdoba (principios del s.XX). En su interior alberga restos arqueológicos de gran valor de la comarca, así como del municipio de Cabra.
+                                        Las piezas más destacadas que se pueden visitar son esculturas de origen romano: un Eros dormido y una réplica de la divinidad del Mithra Tauroctonos. </p>
+                                    <button class="btn btn-primary" onclick="history.back()" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Vuelva atrás
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Reserva Natural Laguna del Conde o el Salobral</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="data:image/jpeg;base64,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" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p>Zona de especial protección (zona húmeda bien conservada)
+                                        Reserva natural, perteneciente a la red natura 2000 además de ser un humedal Ramsar.</p>
+                                    <p class="mb-4">Es un espacio de vital importancia para el ecosistema local, ya que posibilita la existencia de un gran número de aves y de especies vegetales, 
+                                        como fochas, grullas y flamencos. 
+                                        Esta biodiversidad se complementa con un paisaje agrícola, así como del paso de la Vía Verde de la Subbética en las cercanías, 
+                                        aportantando un valor singular a este emplazamiento natural.</p>
+                                    <button class="btn btn-primary" onclick="history.back()" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Vuelva atrás
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+ <!-- Otros Modals-->
+        <!-- Otros Modal 1-->
+        <div class="Otros-modal modal fade" id="OtrosModal1" tabindex="-1" aria-labelledby="OtrosModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Otros Modal - Title-->
+                                    <h2 class="Otros-modal-title text-secondary text-uppercase mb-0">Rutas por la Subbética</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Otros Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="https://www.lavozdelasubbetica.es/media/lavozdelasubbetica/images/2017/11/07//2017110719344769939.jpg" alt="..." />
+                                    <!-- Otros Modal - Text-->
+                                    <p>Ruta del Río Bailón (Cabra-Zuheros)</p>
+
+                                    <p>Se trata de una de las rutas más bonitas y populares de la Subbética. El inicio de la misma se sitúa un kilómetro antes de llegar a la Ermita de la Virgen de la Sierra de Cabra. Con una longitud de 12,8 kilómetros y de dificultad media, se suele tardar en torno a seis horas hasta llegar a su final en Zuheros.</p>
+
+                                        <p>La ruta discurre junto al río Bailón, atravesando el poljé de La Nava. El recorrido pasa parcialmente por la vereda de Merchaniega con la presencia de diversas fuentes y abrevaderos. Su punto de máximo interés son Las Chorreras, un paraje de gran belleza donde en época de lluvias el agua se escurre entre las rocas formando unas bonitas cascadas.</p>
+                                    
+                                        <!-- Otros Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="https://www.lavozdelasubbetica.es/media/lavozdelasubbetica/images/2017/11/07//2017110719362214988.jpg" alt="..." />
+                                    
+                                        <p>Ruta de Las Buitreras (Luque-Carcabuey)</p>
+
+                                    <p>Esta ruta de dificultad media tiene una longitud de 17,5 kilómetros, iniciándose en Luque y finalizando en las inmediaciones de la localidad de Carcabuey. Durante el recorrido, además del importante paisaje que se va descubriendo, tiene el atractivo de permitir el paso por los cortados en los que anida la mayor colonia de buitre leonado de la zona.</p>
+
+                                        <p>En la vertiente de Luque se encuentra una variante del sendero que lleva hasta la Fuente del Espino, pasando por el cortijo de la Osa para regresar después al sendero principal. Tras pasar por el cortijo de La Nava, y antes de remontar el puerto franqueado por la Sierra de la Lastra y la loma de Abuchite, se pasa por el poljé de la Nava de Luque. El recorrido finaliza en las proximidades de Carcabuey.</p>
+                                    
+                                    <!-- Otros Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="https://www.lavozdelasubbetica.es/media/lavozdelasubbetica/images/2017/11/07//2017110719371823428.jpg" alt="..." />
+
+                                    <p>Ruta Sierra del Caballo (Almedinilla)</p>
+
+                                    <p>Si eres de los que se están iniciando en el senderismo, os recomendamos una ruta de dificultad baja como es la de la Sierra del Caballo, de 1,5 kilómetros y una duración de 40 minutos.</p>
+
+                                        <p>Este sendero se inicia junto al Museo Histórico de la localidad, a los pies de la Sierra de Albayate. El recorrido nos llevará hasta la espectacular cascada del Salto del Caballo, discurriendo el sendero en paralelo al río Caicena por una vereda de ganado que coincide con un antiguo camino de época romana. 
+                                        El recorrido discurre a los pies de la formación geológica del Tajo de las Llanas y la Cueva de los Barriguches. El camino nos llevará por las ruinas de distintos molinos harineros del S. XIX.</p>
+
+
+                                      <!-- Otros Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="https://www.lavozdelasubbetica.es/media/lavozdelasubbetica/images/2017/11/07//2017110719401055435.jpg" alt="..." />
+
+                                    <p>Ruta margen izquierdo del pantano (Iznájar)</p>
+
+                                    <p>Esta ruta de dificultad media tiene una longitud de 15 kilómetros y discurre por el margen izquierdo del Pantano de Iznájar. El sendero comienza al final del puente Agroman. Se inicia con una subida de 2,5 kilómetros que ofrece unas magníficas panorámicas del pueblo de Iznájar y el embalse.</p>
+
+                                        <p>Tras bordear el barranco de Arroyo de Gata, lugar donde se pueden observar numerosas aves acuáticas como patos, garzas o gaviotas, llegaremos a un mirador natural sobre el embalse. El camino continúa en bajada hasta el próximo barranco al pie de la Sierra de Cuevas de San Marcos, lugar donde se pueden observar rapaces como el buitre leonado o el halcón peregrino. El recorrido finaliza en el muro de la presa del embalse de Iznájar.</p>
+                                    
+                                            <!-- Otros Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="https://www.lavozdelasubbetica.es/media/lavozdelasubbetica/images/2017/11/07//2017110719415416414.jpg" alt="..." />
+
+                                    <p>Ruta La Tiñosa (Priego de Córdoba)</p>
+
+                                    <p>Con una longitud de 16 kilómetros (sin subir a La Tiñosa), esta ruta parte del Camino Alto o antiguo de Rute situado junto a la Avenida de España de Priego de Córdoba. Continuamos este recorrido dejando a la izquierda las Canteras de Chichaque y saliendo al camino de Navasequilla.</p>
+
+                                        <p>Dirección al pie de La Tiñosa (punto más alto de la geografía cordobesa) continuaremos por el camino conocido como Mayorazgo-Peñuela, en cuyo final del trayecto el Cortijo de Las Chozas de Toledo, situado justo debajo de La Tiñosa.</p>
+                                        
+                                        <p>Para los senderistas más experimentados que quieran ascender a la cima, se puede hacer subiendo por la cara norte, subida conocida por ‘El fantasma’, aunque también y más suave es la subida por el lado oeste. En lo alto de La Tiñosa encontraremos una caja metálica donde el montañero podrá dejar constancia de su paso por allí.</p>
+
+                                        <p class="mb-4"></p>
+                                    <button class="btn btn-primary" onclick="history.back()" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Vuelve atrás
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Otros Modal 2-->
+        <div class="Otros-modal modal fade" id="OtrosModal2" tabindex="-1" aria-labelledby="OtrosModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Otros Modal - Title-->
+                                    <h2 class="Otros-modal-title text-secondary text-uppercase mb-0">Playa de Valdearenas</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Otros Modal - Image-->
+                                    <img class="img-fluid rounded mb-5"  src="https://www.lavozdelasubbetica.es/media/lavozdelasubbetica/images/2019/07/03//2019070311304122164.jpg" alt="..." />
+                                    <!-- Otros Modal - Text-->
+                                    <p>La Subbética cordobesa es tierra de contrastes. Su escarpada orografía y su riqueza natural, patrimonial y cultural hacen de esta comarca al sur de Córdoba una zona singular y atractiva para el visitante.</p> 
+
+                                        <p>Si bien en invierno se puede disfrutar habitualmente de la nieve en las zonas de mayor altitud, 
+                                            en verano se puede pasar un magnífico día de playa sin tener que desplazarse a la costa. 
+                                            La Playa de Valdearenas, ubicada en el Pantano de Iznájar, es el lugar idóneo para disfrutar de una jornada de playa en familia. </p>
+                                            <p>Este paraje situado a apenas un kilómetro de distancia del núcleo urbano tiene una superficie susceptible de aprovechamiento de algo más de 160.000 m2 con una longitud de playa de 1.5 kilómetros.</p>
+                                            <p>Una de las particularidades de esta playa de Valdearenas es que admite mascotas. Se trata de la única playa de interior de Andalucía que cuenta con zonas para bañistas donde puedes acudir acompañado de tu perro. 
+                                                Y es que en todo el litoral andaluz apenas existen una quincena de playas donde está permitido el acceso de las mascotas a la playa. </p>
+                                    <p class="mb-4">En entorno de Valdearenas cuenta además con aseos, restaurantes, camping, escuela náutica, pista de tenis, hoteles e instalaciones deportivas.
+                                        Una infinidad de servicios para hacer la estancia de los bañistas lo más agradable posible junto a tu mascota 'perruna'. </p>
+                                    <button class="btn btn-primary" onclick="history.back()" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Vuelve atrás
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Otros Modal 3-->
+        <div class="Otros-modal modal fade" id="OtrosModal3" tabindex="-1" aria-labelledby="OtrosModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Otros Modal - Title-->
+                                    <h2 class="Otros-modal-title text-secondary text-uppercase mb-0">Priego de Córdoba</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Otros Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="https://blog.gruposubbetica.com/wp-content/uploads/2015/06/priego-1-1024x577.jpg" alt="..." />
+                                    <!-- Otros Modal - Text-->
+                                    <p class="mb-4">Priego de Córdoba es un municipio de la Comarca de la Subbética Cordobesa con una población de 23.112 habitantes (el 48,98 % de ellos son hombres y el 51,02 % mujeres) según datos del observatorio Argos a marzo de 2015.
+                                        Con una extensión de 287 km² y 14 núcleos de población, ocupa el 2.08 % de la superficie provincial.</p>
+                                        <p>Si observamos su pirámide poblacional vemos que priego  que el existen más número de personas cuyas edades están comprendidas entre 35 y 54 años, siendo mayoritario entre 45 y 49 años.</p>
+                                        <p>Observando el nivel de instrucción de la población vemos que el porcentaje de personas sin estudios es del 5,88 %, siendo mayoritario el grupo de personas que alcanzaron los estudios secundarios (40,63 %), habiendo obtenido estudios postsecundarios un 7,16 %.</p>
+                                        
+                                        <p>A tasa de población inmigrante es de un 2.28 % (correspondiente a 527 personas extranjeras) que mayoritariamente proceden de Marruecos (39,10 %), seguido de Rumanía (21,45 % y Reino Unido (14,19 %).
+                                        Sin analizamos el paro registrado en el municipio observamos que el 34,60 % en los hombres y el 7,24 % en las mujeres corresponden al sector primario, concretamente a la Agricultura, Ganadería y Pesca.</p>
+                                    
+                                        <table cellspacing="2" cellpadding="2" border="6">
+                                            <tr>
+                                                <td>Total de habitantes en la comarca</td>
+                                                <td>126,802</td>
+                                            </tr>
+                                
+                                            <tr>
+                                                <td>Extensión</td>
+                                                <td>1.597 km²</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Tasa de desempleo</td>
+                                                <td>12%</td>
+                                            </tr>
+                                        </table>
+
+                                        <br>
+                                    
+                                        <button class="btn btn-primary" onclick="history.back()" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Vuelve atrás
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Otros Modal 4-->
+        <div class="Otros-modal modal fade" id="OtrosModal4" tabindex="-1" aria-labelledby="OtrosModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Otros Modal - Title-->
+                                    <h2 class="Otros-modal-title text-secondary text-uppercase mb-0">Noticias alcalde comarcal</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Otros Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="https://www.lucenadigital.com/images/noticias/gdrsubb%C3%A9ticaalcaldelucenaperezbergillos.jpg" alt="..." />
+                                    <!-- Otros Modal - Text-->
+
+                                    <p>El alcalde de Lucena, Juan Pérez, como representante máximo del Ayuntamiento lucentino, 
+                                        ha sido designado presidente del Grupo de Desarrollo Rural (GDR) de la Subbética Cordobesa al encabezar la única candidatura presentada que recibió 
+                                        el respaldo unánime de las entidades participantes ayer en la Asamblea General celebrada en la sede de la entidad en Cabra.</p>
+ 
+                                        <p>Juan Pérez, que toma el relevo de quien fuera también su antecesor en la Alcaldía lucentina, José Luis Bergillos, 
+                                            tras su renuncia a la presidencia del GDR por motivos personales, accede a esta nueva responsabilidad comarcal al frente de 
+                                            una junta directiva compuesta por un total de 20 personas, representantes de ayuntamientos y asociaciones empresariales y colectivos sindicales y sociales, 
+                                            con mayoría de entidades privadas como marcan los estatutos de los grupos de desarrollo rural.</p>
+                                                            
+                                        <p>En la actualidad, medio centenar de socios componen el GDR de la Subbética Cordobesa, diseñado como una asociación sin ánimo de lucro, abierta y participativa, 
+                                            que se encargan de apoyar con fondos públicos iniciativas de diversificación y especialización económica con el fin de mejorar la calidad de vida 
+                                            en el medio rural y fijar la población a su territorio.
+                                       </p>
+                                    <p class="mb-4"> En este sentido, Juan Pérez ha destacado que una de sus primeras acciones ejecutivas en el GDR pasará por acelerar ante la Junta de Andalucía la aprobación 
+                                        de las subvenciones presentadas en la convocatoria 2018 al Programa de Desarrollo Rural 2014-20, 
+                                        trámite para el que sólo resta la publicación en el BOJA por parte de la Consejería de Agricultura de las ayudas concedidas, en total se esperan 25 proyectos por valor de 1,5 millones de euros. 
+                                        Una que se resuelva las subvenciones del pasado año, 
+                                        el GDR procederá a abrir la convocatoria 2019 para la presentación de nuevos proyectos.</p>
+                                    <button class="btn btn-primary" onclick="history.back()" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Vuelve atrás
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Otros Modal 5-->
+        <div class="Otros-modal modal fade" id="OtrosModal5" tabindex="-1" aria-labelledby="OtrosModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Otros Modal - Title-->
+                                    <h2 class="Otros-modal-title text-secondary text-uppercase mb-0">El encanto de la Subbética, Córdoba</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Otros Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="data:image/png;base64,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" alt="..." />
+                                    <!-- Otros Modal - Text-->
+                                    <p class="mb-4">Video que nos envuelve en un paseo por la Subbética cordobesa</p>
+
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/hoV7elrDeq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <br>
+                                    <button class="btn btn-primary" onclick="history.back()" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Vuelva atrás
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Otros Modal 6-->
+        <div class="Otros-modal modal fade" id="OtrosModal6" tabindex="-1" aria-labelledby="OtrosModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Otros Modal - Title-->
+                                    <h2 class="Otros-modal-title text-secondary text-uppercase mb-0">Noticias GDR Subbéticas</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Otros Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="https://www.subbeticahoy.com/asset/thumbnail,992,558,center,center//media/subbeticahoy/images/2022/01/31/2022013111424665357.jpg" alt="..." />
+                                    <!-- Otros Modal - Text-->
+                                    <p>El pasado fin de semana, tuvo lugar en la localidad de Encinas Reales el encuentro comarcal “Juventud, Igualdad y Ruralidad”, promovido y organizado por el Grupo de Desarrollo Rural de la Subbetica Córdobesa en el marco del proyecto de cooperación Igualab con la participación del presidente de este organismo, Juan Pérez, el alcalde de Encinas Reales, Gabriel González, y corresponsales juveniles de toda la Subbética.</p>
+
+                                    <p>Igualab se trata de un proyecto para fomentar la igualdad de oportunidades entre hombres y mujeres como vía para frenar la progresiva masculinización del medio rural. Con este proyecto, el GDR Subbética pretende la creación una red de personas expertas en igualdad, fomentar la participación y la implicación de mujeres y jóvenes en el desarrollo de los territorios, así como dinamizar y visibilizar el empleo y el emprendimiento de las mujeres.</p>
+                                        
+                                    <p>A través de este encuentro se han desarrollado actividades dinámicas y transversales con el fin de crear y consolidar el Grupo Motor Juvenil de la Subbética. Como señala esta institución, la presencia de las personas jóvenes en el medio rural tiene múltiples efectos positivos como la revitalización de los pueblos y la promoción de la transformación y la innovación de los territorios.</p>
+                                    <p class="mb-4">"El desarrollo rural tiene que continuar caminando de la mano de la juventud, escuchando y ofreciendo un espacio para poner en marcha sus propuestas. Para ello, hemos de apostar por la transversalidad y garantizar no solo un futuro, sino un presente para nuestra juventud", indica el GDR Subbética.</p>
+
+                                        <p>Este organismo también destaca la importancia de la participación ciudadana y fomentar la participación juvenil en el desarrollo socioeconómico de la comarca, así como poner en valor el medio rural y trabajar por la igualdad entre mujeres y hombres en el medio rural, todo ello poniendo el foco en la necesidad de tener una cohesión territorial que ponga a las personas en el centro de su acción.</p>
+                                        
+                                        <p>Las actividades se han enmarcado en un entorno seguro, amplio, con el objetivo de facilitar la expresividad individual como fortaleza de grupo así como asegurar el distanciamiento social debido a la situación COVID-19, haciendo una puesta por estimular no solo los valores de igualdad de género y empoderamiento de la mujer, también el cuidado del medio ambiente y el contexto rural.</p>
+                                        
+                                        <p>La intención del GDR Subbética es que esta actividad marque el inicio de un proyecto que se prolongue en el tiempo para que este Grupo Motor Juvenil sea la representación de la juventud que habita en nuestra comarca.</p>
+                                    <button class="btn btn-primary" onclick="history.go(-1)" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Vuelva atrás
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
